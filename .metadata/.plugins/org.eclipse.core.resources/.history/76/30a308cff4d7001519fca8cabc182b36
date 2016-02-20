@@ -46,9 +46,7 @@ public class InitializeSubroutine {
 		windSpeed = Input.GetInputDouble("Please input the wind speed:");
 		yesterdaysBuildUp = Input.GetInputDouble("Please input yesterday's build up index:");
 		herbaceousStage = Input.GetInputDouble("Please input the current herbaceous stage of vegetation (1=CURED 2=TRANSITION 3=GREAAN):");
-		
-		CalculateSpreads.calcFFM(dryBulbReading, wetBulbReading);
-		
+				
         System.out.println("The first name is: " + dryBulbReading);
         System.out.println("The last name is: " + wetBulbReading);
 	}
