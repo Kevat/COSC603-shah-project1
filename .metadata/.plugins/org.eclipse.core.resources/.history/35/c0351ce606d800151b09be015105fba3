@@ -60,32 +60,32 @@ public class CalculateSpreads {
 	 * Calc adfm.
 	 *
 	 * @param FFM the ffm
-	 * @param BUO the build up index
+	 * @param buildUpIndex the build up index
 	 * @return the double
 	 */
-	public static double calcADFM(double FFM, double BUO)
+	public static double calcADFM(double FFM, double buildUpIndex)
 	{
 		double ADFM = 0.0;
 		
-		ADFM = (0.9 * FFM) + (9.5 * Math.exp(BUO/-50));
+		ADFM = (0.9 * FFM) + (9.5 * Math.exp(buildUpIndex/-50));
 		
 		return ADFM;
 	}
 
 	/**
-	 * Calc BUO.
+	 * Calc bui.
 	 *
-	 * @param prevBUO the previous BUO
+	 * @param BUO the buo
 	 * @param precip the precip
 	 * @return the double
 	 */
-	public static double calcBUO(double prevBUO, double precip)
+	public static double calcBUI(double BUO, double precip)
 	{
-		double BUO = 0.0;
+		double BUI = 0.0;
 		
-		BUO = -50 * (Math.log(1-(-Math.exp(prevBUO / 50))) * Math.exp(1.175 * (precip - 0.1)));
+		BUI = -50 * (Math.log(1-(-Math.exp(BUO / 50))) * Math.exp(1.175 * (precip - 0.1)));
 		
-		return BUO;
+		return BUI;
 	}
 	
 	/**

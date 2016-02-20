@@ -54,20 +54,9 @@ public class InitializeSubroutine {
 		BUO = CalculateSpreads.calcBUO(prevBUO, precip);
 		
 		//Adjust BUO for rain (BUO is negative)
-		
-		//Increase BUO by drying factor
 		ADFM = CalculateSpreads.calcADFM(FFM, BUO);
-		
-		
-		//Set indexes to 1 if ADFM AND FFM are greater than 30 
-		//(NOTE: discrepancy between flow chart (33%) and code (30%)
-		
-		//Calculate indexes if ADFM or FFM below 30
 		grassSpreadIndex = CalculateSpreads.calcGrassSpread(windSpeed, FFM);
 		timberSpreadIndex = CalculateSpreads.calcTimberSpread(windSpeed, ADFM);
-		
-		
-		//Calculate FLoad
 		
         System.out.println("The first name is: " + dryBulbReading);
         System.out.println("The last name is: " + wetBulbReading);

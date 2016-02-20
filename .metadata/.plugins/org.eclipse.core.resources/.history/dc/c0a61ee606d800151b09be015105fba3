@@ -26,7 +26,7 @@ public class InitializeSubroutine {
 		Boolean snowOnGround;
 		double precip;//Preceding precipitation
 		double windSpeed;
-		double prevBUO; //Yesterday's buildup
+		double BUO; //Yesterday's buildup
 		double herbaceousStage;
 		
 		
@@ -37,37 +37,22 @@ public class InitializeSubroutine {
 		double grassSpreadIndex; //Grass spread
 		double timberSpreadIndex; //Timber spread
 		double fireLoadRating; //Fire load rating
-		double BUO; //Build up index
+		double BUI; //Build up index
 		
 		dryBulbReading = Input.GetInputDouble("Please input the dry bulb reading:");
 		wetBulbReading = Input.GetInputDouble("Please input the wet bulb reading:");
 		snowOnGround = Input.GetInputBoolean("Is there snow on the ground? (Y/N):");
 		precip = Input.GetInputDouble("Please input the preceding 24-hour precipitation:");
 		windSpeed = Input.GetInputDouble("Please input the wind speed:");
-		prevBUO = Input.GetInputDouble("Please input yesterday's build up index:");
+		BUO = Input.GetInputDouble("Please input yesterday's build up index:");
 		herbaceousStage = Input.GetInputDouble("Please input the current herbaceous stage of vegetation (1=CURED 2=TRANSITION 3=GREAAN):");
 		
 		FFM = CalculateSpreads.calcFFM(dryBulbReading, wetBulbReading);
 		DF = CalculateSpreads.calcDF(FFM);
-		//Adjust FFM
-		
-		BUO = CalculateSpreads.calcBUO(prevBUO, precip);
-		
-		//Adjust BUO for rain (BUO is negative)
-		
-		//Increase BUO by drying factor
-		ADFM = CalculateSpreads.calcADFM(FFM, BUO);
-		
-		
-		//Set indexes to 1 if ADFM AND FFM are greater than 30 
-		//(NOTE: discrepancy between flow chart (33%) and code (30%)
-		
-		//Calculate indexes if ADFM or FFM below 30
+		BUI = CalculateSpreads.calcBUI(BUO, precip);
+		ADFM = CalculateSpreads.calcADFM(FFM, BUI);
 		grassSpreadIndex = CalculateSpreads.calcGrassSpread(windSpeed, FFM);
 		timberSpreadIndex = CalculateSpreads.calcTimberSpread(windSpeed, ADFM);
-		
-		
-		//Calculate FLoad
 		
         System.out.println("The first name is: " + dryBulbReading);
         System.out.println("The last name is: " + wetBulbReading);
