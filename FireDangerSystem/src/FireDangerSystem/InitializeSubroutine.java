@@ -3,7 +3,10 @@
  */
 package FireDangerSystem;
 
+// TODO: Auto-generated Javadoc
 /**
+ * The Class InitializeSubroutine.
+ *
  * @author Kevat Shah
  * @Version 1.0
  */
@@ -12,9 +15,10 @@ package FireDangerSystem;
  * @Version 1.0
  */
 public class InitializeSubroutine {
+	
 	/**
 	 * The method initializes the fire danger system 
-	 * and serves as the main/start method for the system
+	 * and serves as the main/start method for the system.
 	 *
 	 * @param args - CLI arguments passed in to the system
 	 */
@@ -26,52 +30,91 @@ public class InitializeSubroutine {
 		Boolean snowOnGround;
 		double precip;//Preceding precipitation
 		double windSpeed;
-		double prevBUO; //Yesterday's buildup
 		double herbaceousStage;
 		
 		
 		//Variables to hold output data
-		double DF; // Drying factor
-		double FFM; //Fine fuel moisture
-		double ADFM; //Adjusted fuel moisture
-		double grassSpread; //Grass spread
-		double timberSpread; //Timber spread
-		double fLoad; //Fire load rating
-		double BUO; //Build up index
+		double DF = 0; // Drying factor
+		double FFM = 0; //Fine fuel moisture
+		double ADFM = 0; //Adjusted fuel moisture
+		double grassSpread = 0; //Grass spread
+		double timberSpread = 0; //Timber spread
+		double fLoad = 0; //Fire load rating
+		double BUO = 0; //Build up index
 		
 		dryBulbReading = Input.GetInputDouble("Please input the dry bulb reading:");
 		wetBulbReading = Input.GetInputDouble("Please input the wet bulb reading:");
 		snowOnGround = Input.GetInputBoolean("Is there snow on the ground? (Y/N):");
 		precip = Input.GetInputDouble("Please input the preceding 24-hour precipitation:");
 		windSpeed = Input.GetInputDouble("Please input the wind speed:");
-		prevBUO = Input.GetInputDouble("Please input yesterday's build up index:");
+		BUO = Input.GetInputDouble("Please input yesterday's build up index:");
 		herbaceousStage = Input.GetInputDouble("Please input the current herbaceous stage of vegetation (1=CURED 2=TRANSITION 3=GREAAN):");
 		
-		FFM = CalculateSpreads.calcFFM(dryBulbReading, wetBulbReading);
-		DF = CalculateSpreads.calcDF(FFM);
-		//Adjust FFM
 		
-		BUO = CalculateSpreads.calcBUO(prevBUO, precip);
+		dryBulbReading = 2;
+		wetBulbReading = 0;
+		snowOnGround = false;
+		precip = .07;
+		windSpeed = 5;
+		BUO = 5;
+		herbaceousStage = 1; 
 		
-		//Adjust BUO for rain (BUO is negative)
+		if (snowOnGround)
+		{
+			//Adjust BUO for rain
+			if (precip > .1)
+				BUO = CalculateSpreads.calcBUO(BUO, precip);
+		}
+		else
+		{
+			FFM = CalculateSpreads.calcFFM(dryBulbReading, wetBulbReading);
+			DF = CalculateSpreads.calcDF(FFM);
+			//Adjust FFM for herb stage
+			if (FFM < 1)
+				FFM = 1;
+			FFM = CalculateSpreads.adjustFFMForHerbStage(FFM, herbaceousStage);
+			
+			//Adjust BUO for rain
+			if (precip > .1)
+				BUO = CalculateSpreads.calcBUO(BUO, precip);
+			
+			//Increase BUO by drying factor
+			BUO = BUO + DF;
+			
+			//Calculate adjusted fuel moisture
+			ADFM = CalculateSpreads.calcADFM(FFM, BUO);
+			
+			
+			//Set indexes to 1 if ADFM AND FFM are greater than 30 
+			//(NOTE: discrepancy between flow chart (33%) and code (30%)
+			if (FFM > 30 && ADFM > 30)
+			{
+				grassSpread = 1;
+				timberSpread = 1;
+				fLoad = 1;
+			}
+			else
+			{
+				//Calculate indexes if ADFM or FFM below 30
+				grassSpread = CalculateSpreads.calcGrassSpread(windSpeed, FFM);
+				timberSpread = CalculateSpreads.calcTimberSpread(windSpeed, ADFM);
+				
+
+				if (timberSpread > 0 && BUO > 0)
+					//Calculate FLoad
+					fLoad = CalculateSpreads.calcFLoad(timberSpread, BUO);
+			}
+		}
+			
 		
-		//Increase BUO by drying factor
-		ADFM = CalculateSpreads.calcADFM(FFM, BUO);
-		
-		
-		//Set indexes to 1 if ADFM AND FFM are greater than 30 
-		//(NOTE: discrepancy between flow chart (33%) and code (30%)
-		
-		//Calculate indexes if ADFM or FFM below 30
-		grassSpread = CalculateSpreads.calcGrassSpread(windSpeed, FFM);
-		timberSpread = CalculateSpreads.calcTimberSpread(windSpeed, ADFM);
-		
-		
-		//Calculate FLoad
-		fLoad = CalculateSpreads.calcFLoad(timberSpread, BUO);
-		
-        System.out.println("The first name is: " + dryBulbReading);
-        System.out.println("The last name is: " + wetBulbReading);
+		//Show output to user
+        System.out.println("Fuel Moisture: " + FFM);
+        System.out.println("Drying Factor: " + DF);
+        System.out.println("Adjusted Fuel Moisture: " + ADFM);
+        System.out.println("Build up Index: " + BUO);
+        System.out.println("Grass Spread Index: " + grassSpread);
+        System.out.println("Timber Spread Index: " + timberSpread);
+        System.out.println("Fire Load: " + fLoad);
 	}
 
 }

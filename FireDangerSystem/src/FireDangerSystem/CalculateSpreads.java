@@ -21,7 +21,7 @@ public class CalculateSpreads {
 		
 		GetFFMCoefficients(dryWetDiff, coefficients);
 		
-		FFM = coefficients[0] * Math.exp(coefficients[1]);
+		FFM = coefficients[0] * Math.exp(coefficients[1] * dryWetDiff);
 		
 		return FFM;
 	}
@@ -75,15 +75,18 @@ public class CalculateSpreads {
 	/**
 	 * Calc BUO.
 	 *
-	 * @param prevBUO the previous BUO
+	 * @param BUO the BUO
 	 * @param precip the precip
 	 * @return the double
 	 */
-	public static double calcBUO(double prevBUO, double precip)
+	public static double calcBUO(double BUO, double precip)
 	{
-		double BUO = 0.0;
+		BUO = -50 * (Math.log(1-(1-Math.exp(-BUO / 50)) * Math.exp(-1.175 * (precip - 0.1))));
 		
-		BUO = -50 * (Math.log(1-(-Math.exp(prevBUO / 50))) * Math.exp(1.175 * (precip - 0.1)));
+		if (BUO < 0)
+		{
+			BUO = 0;
+		}
 		
 		return BUO;
 	}
@@ -103,6 +106,9 @@ public class CalculateSpreads {
 		GetSpreadCoefficients(windSpeed, coefficients);
 		grassSpread = (coefficients[0] * (windSpeed + coefficients[1]) * (Math.pow((33-FFM), 1.65))) - 3;
 		
+		if (grassSpread > 99)
+			grassSpread = 99;
+		
 		return grassSpread;
 	}
 
@@ -120,6 +126,9 @@ public class CalculateSpreads {
 		
 		GetSpreadCoefficients(windSpeed, coefficients);
 		timberSpread = (coefficients[0] * (windSpeed + coefficients[1]) * (Math.pow((33-ADFM), 1.65))) - 3;
+
+		if (timberSpread > 99)
+			timberSpread = 99;
 		
 		return timberSpread;
 	}
@@ -145,6 +154,12 @@ public class CalculateSpreads {
 	}
 	
 	
+	/**
+	 * Calc df.
+	 *
+	 * @param FFM the ffm
+	 * @return the double
+	 */
 	public static double calcDF(double FFM)
 	{
 		double df = 0.0;
@@ -167,12 +182,38 @@ public class CalculateSpreads {
 		return df;
 	}
 	
+	/**
+	 * Calc f load.
+	 *
+	 * @param timberSpread the timber spread
+	 * @param BUO the buo
+	 * @return the double
+	 */
 	public static double calcFLoad(double timberSpread, double BUO)
 	{
 		double fLoad = 0.0;
 		
-		fLoad = Math.pow(10, ((1.75 * Math.log10(timberSpread)) + (0.32 * Math.log10(BUO)) - 1.64));
+		fLoad = (1.75 * Math.log10(timberSpread)) + (0.32 * Math.log10(BUO)) - 1.64;
 		
+		if (fLoad > 0)
+			fLoad = Math.pow(10, fLoad);
+		else
+			fLoad = 0;
+		 
+				
 		return fLoad;
+	}
+
+	/**
+	 * Adjust ffm for herb stage.
+	 *
+	 * @param FFM the ffm
+	 * @param herbaceousStage the herbaceous stage
+	 * @return the double
+	 */
+	public static double adjustFFMForHerbStage(double FFM, double herbaceousStage) 
+	{
+		FFM = FFM + FFM * (herbaceousStage - 1) * 0.05;
+		return FFM;
 	}
 }
