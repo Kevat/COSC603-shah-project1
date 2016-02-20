@@ -166,13 +166,4 @@ public class CalculateSpreads {
 		
 		return df;
 	}
-	
-	public static double calcFLoad(double timberSpread, double BUO)
-	{
-		double fLoad = 0.0;
-		
-		fLoad = Math.pow(10, ((1.75 * Math.log10(timberSpread)) + (0.32 * Math.log10(BUO)) - 1.64));
-		
-		return fLoad;
-	}
 }
