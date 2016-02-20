@@ -1,0 +1,10 @@
+package FireDangerSystem;
+
+public class InitializeSubroutine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
