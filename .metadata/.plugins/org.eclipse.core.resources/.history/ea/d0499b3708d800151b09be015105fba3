@@ -34,9 +34,9 @@ public class InitializeSubroutine {
 		double DF; // Drying factor
 		double FFM; //Fine fuel moisture
 		double ADFM; //Adjusted fuel moisture
-		double grassSpread; //Grass spread
-		double timberSpread; //Timber spread
-		double fLoad; //Fire load rating
+		double grassSpreadIndex; //Grass spread
+		double timberSpreadIndex; //Timber spread
+		double fireLoadRating; //Fire load rating
 		double BUO; //Build up index
 		
 		dryBulbReading = Input.GetInputDouble("Please input the dry bulb reading:");
@@ -63,12 +63,11 @@ public class InitializeSubroutine {
 		//(NOTE: discrepancy between flow chart (33%) and code (30%)
 		
 		//Calculate indexes if ADFM or FFM below 30
-		grassSpread = CalculateSpreads.calcGrassSpread(windSpeed, FFM);
-		timberSpread = CalculateSpreads.calcTimberSpread(windSpeed, ADFM);
+		grassSpreadIndex = CalculateSpreads.calcGrassSpread(windSpeed, FFM);
+		timberSpreadIndex = CalculateSpreads.calcTimberSpread(windSpeed, ADFM);
 		
 		
 		//Calculate FLoad
-		fLoad = CalculateSpreads.calcFLoad(timberSpread, BUO);
 		
         System.out.println("The first name is: " + dryBulbReading);
         System.out.println("The last name is: " + wetBulbReading);
