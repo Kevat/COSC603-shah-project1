@@ -3,14 +3,10 @@
  */
 package FireDangerSystem;
 
-// TODO: Auto-generated Javadoc
+
 /**
- * The Class InitializeSubroutine.
+ * The Class InitializeSubroutine serves as the main class for Project 1.
  *
- * @author Kevat Shah
- * @Version 1.0
- */
-/**
  * @author Kevat Shah
  * @Version 1.0
  */
@@ -20,7 +16,7 @@ public class InitializeSubroutine {
 	 * The method initializes the fire danger system 
 	 * and serves as the main/start method for the system.
 	 *
-	 * @param args - CLI arguments passed in to the system
+	 * @param args CLI arguments passed in to the system
 	 */
 	public static void main(String[] args) {
 		
@@ -48,7 +44,7 @@ public class InitializeSubroutine {
 		precip = Input.GetInputDouble("Please input the preceding 24-hour precipitation:");
 		windSpeed = Input.GetInputDouble("Please input the wind speed:");
 		BUO = Input.GetInputDouble("Please input yesterday's build up index:");
-		herbaceousStage = Input.GetInputDouble("Please input the current herbaceous stage of vegetation (1=CURED 2=TRANSITION 3=GREAAN):");
+		herbaceousStage = Input.GetInputDouble("Please input the current herbaceous stage of vegetation (1=CURED 2=TRANSITION 3=GREEN):");
 		
 		
 		dryBulbReading = 2;

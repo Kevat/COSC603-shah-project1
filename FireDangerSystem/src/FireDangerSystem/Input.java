@@ -1,19 +1,21 @@
+/*
+ * 
+ */
 package FireDangerSystem;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class Input.
+ * The Class Input is used for obtaining input from users.
  */
 public class Input {
 	
 	/**
-	 * Gets the input string.
+	 * Gets the input string from the command line.
 	 *
-	 * @param prompt the prompt
-	 * @return the string
+	 * @param prompt Prompt to show the user
+	 * @return The String value entered by the user 
 	 */
 	public static String GetInputString(String prompt)
 	{
@@ -32,17 +34,18 @@ public class Input {
         }
         catch (Exception ex)
         {
-        	//Log exception with user input
+        	//TODO: Log exception with user input
         }
 				
 		return value;
 	}
 	
 	/**
-	 * Gets the input double.
+	 * Gets the input from the user and converts it to a double.
+	 * If the user inputs a non-numeric value, the user is prompted again.
 	 *
-	 * @param prompt the prompt
-	 * @return the double
+	 * @param prompt Prompt to show the user
+	 * @return The double value entered by the user
 	 */
 	public static double GetInputDouble(String prompt)
 	{
@@ -67,10 +70,11 @@ public class Input {
 	}
 	
 	/**
-	 * Gets the input boolean.
+	 * Gets the input from the user as Y or N and converts it to a boolean.
+	 * If the user inputs something other than Y or N, the user is prompted again.
 	 *
-	 * @param prompt the prompt
-	 * @return the boolean
+	 * @param prompt Prompt to show the user
+	 * @return The boolean representation of value entered by the user
 	 */
 	public static Boolean GetInputBoolean(String prompt)
 	{

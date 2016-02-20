@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package FireDangerSystem;
 
 // TODO: Auto-generated Javadoc
@@ -7,11 +10,11 @@ package FireDangerSystem;
 public class CalculateSpreads {
 	
 	/**
-	 * Calculates FFM.
+	 * Calculates Fine Fuel Moisture (FFM).
 	 *
-	 * @param dry the dry
-	 * @param wet the wet
-	 * @return the double
+	 * @param dry Dry-bulb reading
+	 * @param wet Wet-bulb reading
+	 * @return Fine Fuel Moisture
 	 */
 	public static double calcFFM(double dry, double wet)
 	{
@@ -27,10 +30,10 @@ public class CalculateSpreads {
 	}
 
 	/**
-	 * Gets the FFM coefficients.
+	 * Gets the FFM coefficients used for calculating FFM.
 	 *
-	 * @param dryWetDiff - Difference between dry and wet bulb readings
-	 * @param coefficients - Coefficients to be returned: 0 = A, 1 = B
+	 * @param dryWetDiff Difference between dry and wet bulb readings
+	 * @param coefficients Coefficients to be returned: 0 = A, 1 = B
 	 */
 	private static void GetFFMCoefficients(double dryWetDiff, double [] coefficients) 
 	{	
@@ -57,11 +60,11 @@ public class CalculateSpreads {
 	}
 
 	/**
-	 * Calc adfm.
+	 * Calculates Adjusted Fuel Moisture (ADFM).
 	 *
-	 * @param FFM the ffm
-	 * @param BUO the build up index
-	 * @return the double
+	 * @param FFM Fine Fuel Moisture
+	 * @param BUO Build up index
+	 * @return Adjusted Fuel Moisture
 	 */
 	public static double calcADFM(double FFM, double BUO)
 	{
@@ -73,11 +76,11 @@ public class CalculateSpreads {
 	}
 
 	/**
-	 * Calc BUO.
+	 * Calculates adjustments to the Build Up Index (BUO) based on the level of precipitation
 	 *
-	 * @param BUO the BUO
-	 * @param precip the precip
-	 * @return the double
+	 * @param BUO Previous Build Up Index
+	 * @param precip Level or precipitation
+	 * @return Adjusted Build Up Index (BUO)
 	 */
 	public static double calcBUO(double BUO, double precip)
 	{
@@ -92,11 +95,11 @@ public class CalculateSpreads {
 	}
 	
 	/**
-	 * Calc grass spread.
+	 * Calculates Grass Spread Index.
 	 *
-	 * @param windSpeed the wind speed
-	 * @param FFM the ffm
-	 * @return the double
+	 * @param windSpeed Wind Speed
+	 * @param FFM Fine Fuel Moisture
+	 * @return Grass Spread Index
 	 */
 	public static double calcGrassSpread(double windSpeed, double FFM)
 	{
@@ -113,11 +116,11 @@ public class CalculateSpreads {
 	}
 
 	/**
-	 * Calc timber spread.
+	 * Calculates Timber Spread Index.
 	 *
-	 * @param windSpeed the wind speed
-	 * @param ADFM the adfm
-	 * @return the double
+	 * @param windSpeed Wind Speed
+	 * @param ADFM Adjusted Fuel Moisture
+	 * @return Timber Spread Index
 	 */
 	public static double calcTimberSpread(double windSpeed, double ADFM)
 	{
@@ -134,10 +137,10 @@ public class CalculateSpreads {
 	}
 
 	/**
-	 * Gets the spread coefficients.
+	 * Gets the spread coefficients used to calculate Grass and Timber Spread Indexes.
 	 *
-	 * @param windSpeed the wind speed
-	 * @param coefficients the coefficients
+	 * @param windSpeed Wind Speed
+	 * @param coefficients Coefficients to be returned: 0 = A, 1 = B
 	 */
 	private static void GetSpreadCoefficients(double windSpeed, double[] coefficients) {
 		if (windSpeed < 14)
@@ -155,10 +158,10 @@ public class CalculateSpreads {
 	
 	
 	/**
-	 * Calc df.
+	 * Calculate Drying Factor (DF).
 	 *
-	 * @param FFM the ffm
-	 * @return the double
+	 * @param FFM Fine Fuel Moisture
+	 * @return Drying Factor
 	 */
 	public static double calcDF(double FFM)
 	{
@@ -183,11 +186,11 @@ public class CalculateSpreads {
 	}
 	
 	/**
-	 * Calc f load.
+	 * Calculate Fire Load.
 	 *
-	 * @param timberSpread the timber spread
-	 * @param BUO the buo
-	 * @return the double
+	 * @param timberSpread Timber Spread Index
+	 * @param BUO Build Up Index
+	 * @return Fire Load
 	 */
 	public static double calcFLoad(double timberSpread, double BUO)
 	{
@@ -205,11 +208,11 @@ public class CalculateSpreads {
 	}
 
 	/**
-	 * Adjust ffm for herb stage.
+	 * Adjust FFM based on the herbaceous stage of vegetation.
 	 *
-	 * @param FFM the ffm
-	 * @param herbaceousStage the herbaceous stage
-	 * @return the double
+	 * @param FFM Fine Fuel Moisture
+	 * @param herbaceousStage Herbaceous stage of vegetation (1=CURED 2=TRANSITION 3=GREEN)
+	 * @return Fine Fuel Moisture
 	 */
 	public static double adjustFFMForHerbStage(double FFM, double herbaceousStage) 
 	{
