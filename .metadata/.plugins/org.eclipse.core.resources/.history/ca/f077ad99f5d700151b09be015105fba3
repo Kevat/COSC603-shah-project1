@@ -2,12 +2,12 @@ package FireDangerSystem;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class CalculateSpreads is used to calculate the various spreads.
+ * The Class CalculateSpreads.
  */
 public class CalculateSpreads {
 	
 	/**
-	 * Calculates FFM.
+	 * Calc ffm.
 	 *
 	 * @param dry the dry
 	 * @param wet the wet
@@ -27,10 +27,10 @@ public class CalculateSpreads {
 	}
 
 	/**
-	 * Gets the FFM coefficients.
+	 * Gets the ffm coefficients.
 	 *
-	 * @param dryWetDiff - Difference between dry and wet bulb readings
-	 * @param coefficients - Coefficients to be returned: 0 = A, 1 = B
+	 * @param dryWetDiff the dry wet diff
+	 * @param coefficients the coefficients
 	 */
 	private static void GetFFMCoefficients(double dryWetDiff, double [] coefficients) 
 	{	
@@ -54,23 +54,5 @@ public class CalculateSpreads {
 			coefficients[0] = 22.5;
 			coefficients[1] = -.0774;
 		}
-	}
-
-	public static double calcADFM(double FFM, double buildUpIndex)
-	{
-		double ADFM = 0.0;
-		
-		ADFM = (0.9 * FFM) + (9.5 * Math.exp(buildUpIndex/-50));
-		
-		return ADFM;
-	}
-
-	public static double calcBUI(double BUO, double precip)
-	{
-		double BUI = 0.0;
-		
-		BUI = -50 * (Math.log(1-(-Math.exp(BUO / 50))) * Math.exp(1.175 * (precip - 0.1)));
-		
-		return BUI;
 	}
 }

@@ -42,9 +42,9 @@ public class InitializeSubroutine {
 		dryBulbReading = Input.GetInputDouble("Please input the dry bulb reading:");
 		wetBulbReading = Input.GetInputDouble("Please input the wet bulb reading:");
 		snowOnGround = Input.GetInputBoolean("Is there snow on the ground? (Y/N):");
-		precip = Input.GetInputDouble("Please input the preceding 24-hour precipitation:");
+		precedingPrecipitation = Input.GetInputDouble("Please input the preceding 24-hour precipitation:");
 		windSpeed = Input.GetInputDouble("Please input the wind speed:");
-		BUO = Input.GetInputDouble("Please input yesterday's build up index:");
+		yesterdaysBuildUp = Input.GetInputDouble("Please input yesterday's build up index:");
 		herbaceousStage = Input.GetInputDouble("Please input the current herbaceous stage of vegetation (1=CURED 2=TRANSITION 3=GREAAN):");
 		
 		FFM = CalculateSpreads.calcFFM(dryBulbReading, wetBulbReading);

@@ -55,22 +55,4 @@ public class CalculateSpreads {
 			coefficients[1] = -.0774;
 		}
 	}
-
-	public static double calcADFM(double FFM, double buildUpIndex)
-	{
-		double ADFM = 0.0;
-		
-		ADFM = (0.9 * FFM) + (9.5 * Math.exp(buildUpIndex/-50));
-		
-		return ADFM;
-	}
-
-	public static double calcBUI(double BUO, double precip)
-	{
-		double BUI = 0.0;
-		
-		BUI = -50 * (Math.log(1-(-Math.exp(BUO / 50))) * Math.exp(1.175 * (precip - 0.1)));
-		
-		return BUI;
-	}
 }

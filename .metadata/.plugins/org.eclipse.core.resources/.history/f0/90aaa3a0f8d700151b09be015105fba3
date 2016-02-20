@@ -64,13 +64,4 @@ public class CalculateSpreads {
 		
 		return ADFM;
 	}
-
-	public static double calcBUI(double BUO, double precip)
-	{
-		double BUI = 0.0;
-		
-		BUI = -50 * (Math.log(1-(-Math.exp(BUO / 50))) * Math.exp(1.175 * (precip - 0.1)));
-		
-		return BUI;
-	}
 }
