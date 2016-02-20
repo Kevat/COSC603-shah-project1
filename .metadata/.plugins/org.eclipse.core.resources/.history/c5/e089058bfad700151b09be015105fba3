@@ -50,8 +50,7 @@ public class InitializeSubroutine {
 		FFM = CalculateSpreads.calcFFM(dryBulbReading, wetBulbReading);
 		BUI = CalculateSpreads.calcBUI(BUO, precip);
 		ADFM = CalculateSpreads.calcADFM(FFM, BUI);
-		grassSpreadIndex = CalculateSpreads.calcGrassSpread(windSpeed, FFM);
-		timberSpreadIndex = CalculateSpreads.calcTimberSpread(windSpeed, ADFM);
+		
 		
         System.out.println("The first name is: " + dryBulbReading);
         System.out.println("The last name is: " + wetBulbReading);

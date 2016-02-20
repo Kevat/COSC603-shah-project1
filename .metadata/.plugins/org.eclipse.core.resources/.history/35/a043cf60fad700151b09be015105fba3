@@ -56,13 +56,6 @@ public class CalculateSpreads {
 		}
 	}
 
-	/**
-	 * Calc adfm.
-	 *
-	 * @param FFM the ffm
-	 * @param buildUpIndex the build up index
-	 * @return the double
-	 */
 	public static double calcADFM(double FFM, double buildUpIndex)
 	{
 		double ADFM = 0.0;
@@ -72,13 +65,6 @@ public class CalculateSpreads {
 		return ADFM;
 	}
 
-	/**
-	 * Calc bui.
-	 *
-	 * @param BUO the buo
-	 * @param precip the precip
-	 * @return the double
-	 */
 	public static double calcBUI(double BUO, double precip)
 	{
 		double BUI = 0.0;
@@ -88,48 +74,23 @@ public class CalculateSpreads {
 		return BUI;
 	}
 	
-	/**
-	 * Calc grass spread.
-	 *
-	 * @param windSpeed the wind speed
-	 * @param FFM the ffm
-	 * @return the double
-	 */
 	public static double calcGrassSpread(double windSpeed, double FFM)
 	{
 		double grassSpread = 0.0;
-		double[] coefficients = new double[2];
-		
-		GetSpreadCoefficients(windSpeed, coefficients);
-		grassSpread = (coefficients[0] * (windSpeed + coefficients[1]) * (Math.pow((33-FFM), 1.65))) - 3;
 		
 		return grassSpread;
 	}
 
-	/**
-	 * Calc timber spread.
-	 *
-	 * @param windSpeed the wind speed
-	 * @param ADFM the adfm
-	 * @return the double
-	 */
 	public static double calcTimberSpread(double windSpeed, double ADFM)
 	{
-		double timberSpread = 0.0;
+		double grassSpread = 0.0;
+
 		double[] coefficients = new double[2];
 		
 		GetSpreadCoefficients(windSpeed, coefficients);
-		timberSpread = (coefficients[0] * (windSpeed + coefficients[1]) * (Math.pow((33-ADFM), 1.65))) - 3;
-		
-		return timberSpread;
+		return grassSpread;
 	}
 
-	/**
-	 * Gets the spread coefficients.
-	 *
-	 * @param windSpeed the wind speed
-	 * @param coefficients the coefficients
-	 */
 	private static void GetSpreadCoefficients(double windSpeed, double[] coefficients) {
 		if (windSpeed < 14)
 		{
