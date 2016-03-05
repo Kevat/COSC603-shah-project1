@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_1LNxcNf0EeWba9ytn62fzQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_1LNxcdf0EeWba9ytn62fzQ" bindingContexts="_1LXikNf0EeWba9ytn62fzQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CalculateSpreads.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Input.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/Input.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/FireDangerSystem/src/FireDangerSystem/Input.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;InitializeSubroutine.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/InitializeSubroutine.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/FireDangerSystem/src/FireDangerSystem/InitializeSubroutine.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HelloWorld.java&quot; tooltip=&quot;FireDangerSystem/src/HelloWorld/HelloWorld.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/FireDangerSystem/src/HelloWorld/HelloWorld.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Input.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/Input.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/FireDangerSystem/src/FireDangerSystem/Input.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CalculateSpreads.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;InitializeSubroutine.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/InitializeSubroutine.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/FireDangerSystem/src/FireDangerSystem/InitializeSubroutine.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HelloWorld.java&quot; tooltip=&quot;FireDangerSystem/src/HelloWorld/HelloWorld.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/FireDangerSystem/src/HelloWorld/HelloWorld.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_1LNxcdf0EeWba9ytn62fzQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_1LNxctf0EeWba9ytn62fzQ" label="%trimmedwindow.label.eclipseSDK" x="120" y="152" width="1024" height="768">
@@ -49,6 +49,7 @@
           <tags>persp.showIn:org.eclipse.ui.navigator.ProjectExplorer</tags>
           <tags>persp.viewSC:org.eclipse.pde.runtime.LogView</tags>
           <tags>persp.perspSC:org.eclipse.wst.xml.ui.perspective</tags>
+          <tags>persp.actionSet:gr.uom.java.jdeodorant.BadSmells</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_1LNxddf0EeWba9ytn62fzQ" selectedElement="_1LNxf9f0EeWba9ytn62fzQ" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_1LNxdtf0EeWba9ytn62fzQ" containerData="2600" selectedElement="_1LNxd9f0EeWba9ytn62fzQ">
               <children xsi:type="basic:PartStack" xmi:id="_1LNxd9f0EeWba9ytn62fzQ" elementId="topLeft" containerData="5000" selectedElement="_1LNxeNf0EeWba9ytn62fzQ">
@@ -138,6 +139,7 @@
           <tags>persp.viewSC:org.eclipse.wb.core.StructureView</tags>
           <tags>persp.viewSC:org.eclipse.wb.core.PaletteView</tags>
           <tags>persp.actionSet:org.eclipse.debug.ui.debugActionSet</tags>
+          <tags>persp.actionSet:gr.uom.java.jdeodorant.BadSmells</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_Q78ZgdgNEeW3XMGfsAme2w" selectedElement="_Q78ZjdgNEeW3XMGfsAme2w" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_Q78ZgtgNEeW3XMGfsAme2w" containerData="2500" selectedElement="_Q78Zg9gNEeW3XMGfsAme2w">
               <children xsi:type="basic:PartStack" xmi:id="_Q78Zg9gNEeW3XMGfsAme2w" elementId="left" containerData="6000" selectedElement="_Q78ZhNgNEeW3XMGfsAme2w">
@@ -155,7 +157,7 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_Q78ZjdgNEeW3XMGfsAme2w" containerData="7500" selectedElement="_Q78Zl9gNEeW3XMGfsAme2w">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_Q78ZjtgNEeW3XMGfsAme2w" containerData="7500" selectedElement="_Q78Zj9gNEeW3XMGfsAme2w" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_Q78ZjtgNEeW3XMGfsAme2w" containerData="6064" selectedElement="_Q78Zj9gNEeW3XMGfsAme2w" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_Q78Zj9gNEeW3XMGfsAme2w" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_1LNyxtf0EeWba9ytn62fzQ"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_Q78ZkNgNEeW3XMGfsAme2w" visible="false" containerData="2500" selectedElement="_Q78Zk9gNEeW3XMGfsAme2w">
                   <children xsi:type="basic:PartStack" xmi:id="_Q78ZkdgNEeW3XMGfsAme2w" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack" visible="false" containerData="5000" selectedElement="_Q78ZktgNEeW3XMGfsAme2w">
@@ -171,9 +173,10 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_Q78Zl9gNEeW3XMGfsAme2w" elementId="bottom" containerData="2500" selectedElement="_Q78ZmNgNEeW3XMGfsAme2w">
+              <children xsi:type="basic:PartStack" xmi:id="_Q78Zl9gNEeW3XMGfsAme2w" elementId="bottom" containerData="3936" selectedElement="_aQ7AEOJ6EeWm3-MdXpFgoQ">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
                 <tags>Debug</tags>
+                <tags>Bad Smells</tags>
                 <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Q78ZmNgNEeW3XMGfsAme2w" elementId="org.eclipse.ui.views.ProblemView" ref="_1LNzm9f0EeWba9ytn62fzQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Q78ZmdgNEeW3XMGfsAme2w" elementId="org.eclipse.jdt.ui.JavadocView" ref="_1LNzq9f0EeWba9ytn62fzQ"/>
@@ -183,6 +186,11 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_Q78ZndgNEeW3XMGfsAme2w" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_1LNy29f0EeWba9ytn62fzQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Q78ZntgNEeW3XMGfsAme2w" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_1LNzr9f0EeWba9ytn62fzQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_kuPC0NgOEeW3XMGfsAme2w" elementId="org.eclipse.debug.ui.DebugView" ref="_XqFFcdgNEeW3XMGfsAme2w"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_SFUQkOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.DuplicatedCode" ref="_SFTpgOJ6EeWm3-MdXpFgoQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_T6b_IOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.GodClass" ref="_T6bYEOJ6EeWm3-MdXpFgoQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_VWYYsOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.LongMethod" ref="_VWXxoOJ6EeWm3-MdXpFgoQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_ZORQQeJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.TypeChecking" ref="_ZORQQOJ6EeWm3-MdXpFgoQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_aQ7AEOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.FeatureEnvy" ref="_aQ6ZAOJ6EeWm3-MdXpFgoQ"/>
               </children>
             </children>
           </children>
@@ -221,6 +229,7 @@
           <tags>persp.actionSet:org.eclipse.jdt.ui.JavaActionSet</tags>
           <tags>persp.showIn:org.eclipse.jdt.ui.PackageExplorer</tags>
           <tags>persp.perspSC:org.eclipse.wst.xml.ui.perspective</tags>
+          <tags>persp.actionSet:gr.uom.java.jdeodorant.BadSmells</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_XqFFedgNEeW3XMGfsAme2w" selectedElement="_XqFFetgNEeW3XMGfsAme2w">
             <children xsi:type="basic:PartSashContainer" xmi:id="_XqFFetgNEeW3XMGfsAme2w" containerData="7500" selectedElement="_XqFFhtgNEeW3XMGfsAme2w">
               <children xsi:type="basic:PartSashContainer" xmi:id="_XqFFe9gNEeW3XMGfsAme2w" containerData="4083" selectedElement="_XqFFfNgNEeW3XMGfsAme2w" horizontal="true">
@@ -286,11 +295,17 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_1LNyxtf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.editorss" selectedElement="_1LNyx9f0EeWba9ytn62fzQ">
-      <children xsi:type="basic:PartStack" xmi:id="_1LNyx9f0EeWba9ytn62fzQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_ZB0XYNiwEeW3XMGfsAme2w">
+      <children xsi:type="basic:PartStack" xmi:id="_1LNyx9f0EeWba9ytn62fzQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Wh7l0OJ6EeWm3-MdXpFgoQ">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <children xsi:type="basic:Part" xmi:id="_ZB0XYNiwEeW3XMGfsAme2w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CalculateSpreads.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CalculateSpreads.java&quot; partName=&quot;CalculateSpreads.java&quot; title=&quot;CalculateSpreads.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1097&quot; selectionTopPixel=&quot;760&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CalculateSpreads.java&quot; partName=&quot;CalculateSpreads.java&quot; title=&quot;CalculateSpreads.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_Wh7l0OJ6EeWm3-MdXpFgoQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Input.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Input.java&quot; partName=&quot;Input.java&quot; title=&quot;Input.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/Input.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/FireDangerSystem/src/FireDangerSystem/Input.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -396,11 +411,9 @@
       <tags>categoryTag:Java</tags>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_1LNzm9f0EeWba9ytn62fzQ" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" closeable="true">
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Warnings (2 items)&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;150&quot; org.eclipse.ui.ide.markerType=&quot;150&quot; org.eclipse.ui.ide.pathField=&quot;200&quot; org.eclipse.ui.ide.resourceField=&quot;150&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;500&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;150&quot; org.eclipse.ui.ide.markerType=&quot;150&quot; org.eclipse.ui.ide.pathField=&quot;200&quot; org.eclipse.ui.ide.resourceField=&quot;150&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;500&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_1LNznNf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.views.ProblemView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -410,7 +423,7 @@
         <tags>popup:org.eclipse.ui.views.ProblemView</tags>
         <tags>popup:org.eclipse.ui.ide.MarkersView</tags>
       </menus>
-      <toolbar xmi:id="_1LNzqNf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.views.ProblemView"/>
+      <toolbar xmi:id="_1LNzqNf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.views.ProblemView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_1LNzq9f0EeWba9ytn62fzQ" elementId="org.eclipse.jdt.ui.JavadocView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Javadoc" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/javadoc.png" tooltip="" closeable="true">
       <tags>View</tags>
@@ -508,6 +521,58 @@
       <tags>View</tags>
       <tags>categoryTag:General</tags>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_SFTpgOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.DuplicatedCode" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Duplicated Code" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Bad Smells</tags>
+      <menus xmi:id="_SFqO0OJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.DuplicatedCode">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_SFqO0eJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.DuplicatedCode" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_T6bYEOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.GodClass" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="God Class" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Bad Smells</tags>
+      <menus xmi:id="_T6nlUOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.GodClass">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_T6nlUeJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.GodClass" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_VWXxoOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.LongMethod" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Long Method" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Bad Smells</tags>
+      <menus xmi:id="_VWkl8OJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.LongMethod">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_VWkl8eJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.LongMethod" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_ZORQQOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.TypeChecking" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Type Checking" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Bad Smells</tags>
+      <menus xmi:id="_ZOc2cOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.TypeChecking">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_ZOc2ceJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.TypeChecking" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_aQ6ZAOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.FeatureEnvy" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Feature Envy" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Bad Smells</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
+      <menus xmi:id="_aRF_MOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.FeatureEnvy">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_aRGmQOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.FeatureEnvy"/>
+    </sharedElements>
     <trimBars xmi:id="_1LNztdf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.main.toolbar">
       <children xsi:type="menu:ToolBar" xmi:id="_1LNzttf0EeWba9ytn62fzQ" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -515,7 +580,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1LNzuNf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_FK0ox9f1EeW3XMGfsAme2w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_1LXob9f0EeWba9ytn62fzQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_QlcZQOJ6EeWm3-MdXpFgoQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_1LXob9f0EeWba9ytn62fzQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1LNzxtf0EeWba9ytn62fzQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -539,7 +604,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1LN0CNf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_FK0o0df1EeW3XMGfsAme2w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_1LXn59f0EeWba9ytn62fzQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_QleOcOJ6EeWm3-MdXpFgoQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_1LXn59f0EeWba9ytn62fzQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1LN0E9f0EeWba9ytn62fzQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1002,6 +1067,7 @@
   <bindingTables xmi:id="_1LXijtf0EeWba9ytn62fzQ" bindingContext="_1LXi39f0EeWba9ytn62fzQ"/>
   <bindingTables xmi:id="_1LXij9f0EeWba9ytn62fzQ" bindingContext="_1LXi4Nf0EeWba9ytn62fzQ"/>
   <bindingTables xmi:id="_kWYY8dgNEeW3XMGfsAme2w" bindingContext="_kWYY8NgNEeW3XMGfsAme2w"/>
+  <bindingTables xmi:id="_QkhzQeJ6EeWm3-MdXpFgoQ" bindingContext="_QkhzQOJ6EeWm3-MdXpFgoQ"/>
   <rootContext xmi:id="_1LXikNf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_1LXikdf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
       <children xmi:id="_1LXiktf0EeWba9ytn62fzQ" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.platform" name="%bindingcontext.name.bindingView"/>
@@ -1090,6 +1156,7 @@
   <rootContext xmi:id="_1LXi39f0EeWba9ytn62fzQ" elementId="org.eclipse.wb.core.ui.actionset" name="Auto::org.eclipse.wb.core.ui.actionset"/>
   <rootContext xmi:id="_1LXi4Nf0EeWba9ytn62fzQ" elementId="net.sf.jautodoc.actions.SearchActionSet" name="Auto::net.sf.jautodoc.actions.SearchActionSet"/>
   <rootContext xmi:id="_kWYY8NgNEeW3XMGfsAme2w" elementId="org.eclipse.jdt.launching.localJavaApplication.internal.org.eclipse.debug.ui.DebugPerspective" name="Auto::org.eclipse.jdt.launching.localJavaApplication.internal.org.eclipse.debug.ui.DebugPerspective"/>
+  <rootContext xmi:id="_QkhzQOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.BadSmells" name="Auto::gr.uom.java.jdeodorant.BadSmells"/>
   <descriptors xmi:id="_1LXi4df0EeWba9ytn62fzQ" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
     <tags>Editor</tags>
   </descriptors>
@@ -1348,6 +1415,34 @@
   <descriptors xmi:id="_1LXjIdf0EeWba9ytn62fzQ" elementId="org.eclipse.wst.xml.ui.contentmodel.view" label="Content Model" iconURI="platform:/plugin/org.eclipse.wst.xml.ui/icons/full/view16/hierarchy.gif" tooltip="" category="XML" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
+  </descriptors>
+  <descriptors xmi:id="_QdCEIeJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.FeatureEnvy" label="Feature Envy" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" category="Bad Smells" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Bad Smells</tags>
+  </descriptors>
+  <descriptors xmi:id="_QdDSQOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.TypeChecking" label="Type Checking" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" category="Bad Smells" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Bad Smells</tags>
+  </descriptors>
+  <descriptors xmi:id="_QdD5UOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.LongMethod" label="Long Method" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" category="Bad Smells" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Bad Smells</tags>
+  </descriptors>
+  <descriptors xmi:id="_QdEgYOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.GodClass" label="God Class" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" category="Bad Smells" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Bad Smells</tags>
+  </descriptors>
+  <descriptors xmi:id="_QdEgYeJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.DuplicatedCode" label="Duplicated Code" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" category="Bad Smells" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Bad Smells</tags>
+  </descriptors>
+  <descriptors xmi:id="_QdFHcOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.CodeSmellVisualization" label="Code Smell Visualization" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" category="Bad Smells" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Bad Smells</tags>
+  </descriptors>
+  <descriptors xmi:id="_QdFHceJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.CodeSmellPackageExplorer" label="Code Smell Package Explorer" iconURI="platform:/plugin/gr.uom.java.jdeodorant/icons/repair.png" tooltip="" category="Bad Smells" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Bad Smells</tags>
   </descriptors>
   <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
     <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
@@ -2279,6 +2374,11 @@
   <commands xmi:id="_1LXp39f0EeWba9ytn62fzQ" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.tasks.ui.open.repositories.view" commandName="Show Task Repositories View" description="Show Task Repositories View" category="_1LXqENf0EeWba9ytn62fzQ"/>
   <commands xmi:id="_1LXp4Nf0EeWba9ytn62fzQ" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.doc.legend.show.action" commandName="Show UI Legend" description="Show Tasks UI Legend" category="_1LXqENf0EeWba9ytn62fzQ"/>
   <commands xmi:id="_1LXp4df0EeWba9ytn62fzQ" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.context.ui.actions.tasklist.focus" commandName="Focus on Workweek" description="Focus on Workweek" category="_1LXqENf0EeWba9ytn62fzQ"/>
+  <commands xmi:id="_Qj_AsOJ6EeWm3-MdXpFgoQ" elementId="AUTOGEN:::gr.uom.java.jdeodorant.BadSmells/gr.uom.java.jdeodorant.actions.FeatureEnvy" commandName="Feature Envy" description="Feature Envy" category="_1LXqENf0EeWba9ytn62fzQ"/>
+  <commands xmi:id="_Qj_AseJ6EeWm3-MdXpFgoQ" elementId="AUTOGEN:::gr.uom.java.jdeodorant.BadSmells/gr.uom.java.jdeodorant.actions.TypeChecking" commandName="Type Checking" description="Type Checking" category="_1LXqENf0EeWba9ytn62fzQ"/>
+  <commands xmi:id="_Qj_AsuJ6EeWm3-MdXpFgoQ" elementId="AUTOGEN:::gr.uom.java.jdeodorant.BadSmells/gr.uom.java.jdeodorant.actions.LongMethod" commandName="Long Method" description="Long Method" category="_1LXqENf0EeWba9ytn62fzQ"/>
+  <commands xmi:id="_Qj_As-J6EeWm3-MdXpFgoQ" elementId="AUTOGEN:::gr.uom.java.jdeodorant.BadSmells/gr.uom.java.jdeodorant.actions.GodClass" commandName="God Class" description="God Class" category="_1LXqENf0EeWba9ytn62fzQ"/>
+  <commands xmi:id="_Qj_AtOJ6EeWm3-MdXpFgoQ" elementId="AUTOGEN:::gr.uom.java.jdeodorant.BadSmells/gr.uom.java.jdeodorant.actions.DuplicatedCode" commandName="Duplicated Code" description="Duplicated Code" category="_1LXqENf0EeWba9ytn62fzQ"/>
   <addons xmi:id="_1LXp4tf0EeWba9ytn62fzQ" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_1LXp49f0EeWba9ytn62fzQ" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_1LXp5Nf0EeWba9ytn62fzQ" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

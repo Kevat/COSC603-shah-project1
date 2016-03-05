@@ -78,7 +78,14 @@ public class Input {
 	 */
 	public static Boolean GetInputBoolean(String prompt)
 	{
-		char inputYN = inputYN(prompt);
+		char inputYN = ' ';
+		
+		while (inputYN != 'y' && inputYN != 'n')
+		{
+			String inputString = GetInputString(prompt);
+			inputYN = inputString.toLowerCase().charAt(0);
+		}
+		
 		Boolean input = true;
 		
 		if (inputYN == 'y')
@@ -91,14 +98,5 @@ public class Input {
 		}
 		
 		return input;
-	}
-
-	private static char inputYN(String prompt) {
-		char inputYN = ' ';
-		while (inputYN != 'y' && inputYN != 'n') {
-			String inputString = GetInputString(prompt);
-			inputYN = inputString.toLowerCase().charAt(0);
-		}
-		return inputYN;
 	}
 }

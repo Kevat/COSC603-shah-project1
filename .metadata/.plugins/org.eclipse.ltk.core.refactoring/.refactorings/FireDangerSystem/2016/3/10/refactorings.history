@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract from method &apos;GetInputBoolean&apos; variable &apos;inputYN=&apos; &apos;&apos;" description="Extract from method &apos;GetInputBoolean&apos;" flags="6" id="org.eclipse.extract.method" stamp="1457145091164"/>
+</session>
