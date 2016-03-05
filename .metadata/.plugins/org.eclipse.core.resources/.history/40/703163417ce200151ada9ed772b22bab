@@ -76,7 +76,7 @@ public class CalculateSpreads {
 	}
 
 	/**
-	 * Calculates adjustments to the Build Up Index (BUO) based on the level of precipitation.
+	 * Calculates adjustments to the Build Up Index (BUO) based on the level of precipitation
 	 *
 	 * @param BUO Previous Build Up Index
 	 * @param precip Level or precipitation

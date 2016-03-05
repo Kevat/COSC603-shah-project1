@@ -156,7 +156,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_Q78ZjNgNEeW3XMGfsAme2w" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_1LNzsdf0EeWba9ytn62fzQ"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_Q78ZjdgNEeW3XMGfsAme2w" containerData="7500" selectedElement="_Q78Zl9gNEeW3XMGfsAme2w">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_Q78ZjdgNEeW3XMGfsAme2w" containerData="7500" selectedElement="_Q78ZjtgNEeW3XMGfsAme2w">
               <children xsi:type="basic:PartSashContainer" xmi:id="_Q78ZjtgNEeW3XMGfsAme2w" containerData="6064" selectedElement="_Q78Zj9gNEeW3XMGfsAme2w" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_Q78Zj9gNEeW3XMGfsAme2w" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_1LNyxtf0EeWba9ytn62fzQ"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_Q78ZkNgNEeW3XMGfsAme2w" visible="false" containerData="2500" selectedElement="_Q78Zk9gNEeW3XMGfsAme2w">
@@ -173,11 +173,10 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_Q78Zl9gNEeW3XMGfsAme2w" elementId="bottom" containerData="3936" selectedElement="_aQ7AEOJ6EeWm3-MdXpFgoQ">
+              <children xsi:type="basic:PartStack" xmi:id="_Q78Zl9gNEeW3XMGfsAme2w" elementId="bottom" containerData="3936" selectedElement="_Q78ZnNgNEeW3XMGfsAme2w">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
                 <tags>Debug</tags>
                 <tags>Bad Smells</tags>
-                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Q78ZmNgNEeW3XMGfsAme2w" elementId="org.eclipse.ui.views.ProblemView" ref="_1LNzm9f0EeWba9ytn62fzQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Q78ZmdgNEeW3XMGfsAme2w" elementId="org.eclipse.jdt.ui.JavadocView" ref="_1LNzq9f0EeWba9ytn62fzQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Q78ZmtgNEeW3XMGfsAme2w" elementId="org.eclipse.jdt.ui.SourceView" ref="_1LNzrNf0EeWba9ytn62fzQ"/>
@@ -295,14 +294,17 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_1LNyxtf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.editorss" selectedElement="_1LNyx9f0EeWba9ytn62fzQ">
-      <children xsi:type="basic:PartStack" xmi:id="_1LNyx9f0EeWba9ytn62fzQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Wh7l0OJ6EeWm3-MdXpFgoQ">
+      <children xsi:type="basic:PartStack" xmi:id="_1LNyx9f0EeWba9ytn62fzQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_ZB0XYNiwEeW3XMGfsAme2w">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_ZB0XYNiwEeW3XMGfsAme2w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CalculateSpreads.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CalculateSpreads.java&quot; partName=&quot;CalculateSpreads.java&quot; title=&quot;CalculateSpreads.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CalculateSpreads.java&quot; partName=&quot;CalculateSpreads.java&quot; title=&quot;CalculateSpreads.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/FireDangerSystem/src/FireDangerSystem/CalculateSpreads.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;74&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_Wh7l0OJ6EeWm3-MdXpFgoQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Input.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Input.java&quot; partName=&quot;Input.java&quot; title=&quot;Input.java&quot; tooltip=&quot;FireDangerSystem/src/FireDangerSystem/Input.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/FireDangerSystem/src/FireDangerSystem/Input.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -565,13 +567,11 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Bad Smells</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_aRF_MOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.FeatureEnvy">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_aRGmQOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.FeatureEnvy"/>
+      <toolbar xmi:id="_aRGmQOJ6EeWm3-MdXpFgoQ" elementId="gr.uom.java.jdeodorant.views.FeatureEnvy" visible="false"/>
     </sharedElements>
     <trimBars xmi:id="_1LNztdf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.main.toolbar">
       <children xsi:type="menu:ToolBar" xmi:id="_1LNzttf0EeWba9ytn62fzQ" elementId="group.file" toBeRendered="false">
@@ -580,7 +580,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1LNzuNf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_QlcZQOJ6EeWm3-MdXpFgoQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_1LXob9f0EeWba9ytn62fzQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_M1BwwOJ8EeWozpoXgpqDlA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_1LXob9f0EeWba9ytn62fzQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1LNzxtf0EeWba9ytn62fzQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -604,7 +604,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1LN0CNf0EeWba9ytn62fzQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_QleOcOJ6EeWm3-MdXpFgoQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_1LXn59f0EeWba9ytn62fzQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_M1Dl8OJ8EeWozpoXgpqDlA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_1LXn59f0EeWba9ytn62fzQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_1LN0E9f0EeWba9ytn62fzQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

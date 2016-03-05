@@ -6,7 +6,6 @@ package FireDangerSystem;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Input is used for obtaining input from users.
  */
@@ -94,12 +93,6 @@ public class Input {
 		return input;
 	}
 
-	/**
-	 * Input yn.
-	 *
-	 * @param prompt the prompt
-	 * @return the char
-	 */
 	private static char inputYN(String prompt) {
 		char inputYN = ' ';
 		while (inputYN != 'y' && inputYN != 'n') {
